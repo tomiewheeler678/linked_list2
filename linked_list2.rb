@@ -20,7 +20,7 @@ end
     def reverse_list(list, previous=nil)
         if list
             old_node = list.next_node
-            list.next_node = previous_node
+            list.next_node = previous
             reverse_list(old_node, list)
         end
     end
